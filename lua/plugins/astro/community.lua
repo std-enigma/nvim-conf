@@ -1,6 +1,8 @@
 ---@type LazySpec
 return {
 	"AstroNvim/astrocommunity",
+
+	-- Add lua language pack
 	{ import = "astrocommunity.pack.lua" },
 
 	-- Configure nvim for vscode usage
