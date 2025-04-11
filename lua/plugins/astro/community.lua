@@ -32,6 +32,9 @@ return {
 	-- Tab out from parentheses, quotes, and similar contexts
 	{ import = "astrocommunity.motion.tabout-nvim" },
 
+	-- Take pretty screenshots of your code
+	{ import = "astrocommunity.media.codesnap-nvim" },
+
 	-- Better lsp renaming functionality
 	{ import = "astrocommunity.lsp.inc-rename-nvim" },
 
