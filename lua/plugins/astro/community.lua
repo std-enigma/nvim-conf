@@ -38,6 +38,9 @@ return {
 	-- Use snacks.nvim for some lsp mappings
 	{ import = "astrocommunity.recipes.picker-lsp-mappings" },
 
+	-- Automatic split window management
+	{ import = "astrocommunity.split-and-window.windows-nvim" },
+
 	-- Change the looks of heirline.nvim winbar
 	{ import = "astrocommunity.recipes.heirline-vscode-winbar" },
 
