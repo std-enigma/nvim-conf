@@ -11,6 +11,9 @@ return {
 	-- Configure nvim for neovide usage
 	{ import = "astrocommunity.recipes.neovide" },
 
+	-- Easily move selections in any direction
+	{ import = "astrocommunity.motion.mini-move" },
+
 	-- Better UI functionality
 	{ import = "astrocommunity.utility.noice-nvim" },
 
