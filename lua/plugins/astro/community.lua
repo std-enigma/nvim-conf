@@ -5,6 +5,9 @@ return {
 	-- Add lua language pack
 	{ import = "astrocommunity.pack.lua" },
 
+	-- Extend and create a/i textobjects
+	{ import = "astrocommunity.motion.mini-ai" },
+
 	-- Configure nvim for vscode usage
 	{ import = "astrocommunity.recipes.vscode" },
 
