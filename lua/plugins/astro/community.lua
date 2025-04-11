@@ -17,14 +17,14 @@ return {
 	-- Better lsp renaming functionality
 	{ import = "astrocommunity.lsp.inc-rename-nvim" },
 
-	-- Another cool file explorer
-	{ import = "astrocommunity.file-explorer.oil-nvim" },
-
 	-- Change the looks of the default icons
 	{ import = "astrocommunity.recipes.vscode-icons" },
 
 	-- Smooth window scrolling
 	{ import = "astrocommunity.scrolling.vim-smoothie" },
+
+	-- Another cool file explorer
+	{ import = "astrocommunity.file-explorer.oil-nvim" },
 
 	-- Better diagnostics + quickfix and location list
 	{ import = "astrocommunity.diagnostics.trouble-nvim" },
