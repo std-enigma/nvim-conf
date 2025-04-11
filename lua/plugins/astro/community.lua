@@ -23,6 +23,9 @@ return {
 	-- Better lsp renaming functionality
 	{ import = "astrocommunity.lsp.inc-rename-nvim" },
 
+	-- Add/change/delete surrounding delimiter pairs
+	{ import = "astrocommunity.motion.nvim-surround" },
+
 	-- Easy find and replace
 	{ import = "astrocommunity.search.grug-far-nvim" },
 
