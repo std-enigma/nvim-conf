@@ -1,14 +1,5 @@
 ---@type LazySpec
 return {
-	-- Customize lsp_signatures
-	{
-		"ray-x/lsp_signature.nvim",
-		event = "BufRead",
-		config = function()
-			require("lsp_signature").setup()
-		end,
-	},
-
 	-- Customize LuaSnip
 	{
 		"L3MON4D3/LuaSnip",
