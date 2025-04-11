@@ -17,6 +17,9 @@ return {
 	-- Better % navigation
 	{ import = "astrocommunity.motion.vim-matchup" },
 
+	-- Tab out from parentheses, quotes, and similar contexts
+	{ import = "astrocommunity.motion.tabout-nvim" },
+
 	-- Better lsp renaming functionality
 	{ import = "astrocommunity.lsp.inc-rename-nvim" },
 
