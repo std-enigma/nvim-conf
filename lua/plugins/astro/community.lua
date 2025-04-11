@@ -47,6 +47,9 @@ return {
 	-- Change the looks of the default icons
 	{ import = "astrocommunity.recipes.vscode-icons" },
 
+	-- Better lsp signatures
+	{ import = "astrocommunity.lsp.lsp-signature-nvim" },
+
 	-- Smooth window scrolling
 	{ import = "astrocommunity.scrolling.vim-smoothie" },
 
