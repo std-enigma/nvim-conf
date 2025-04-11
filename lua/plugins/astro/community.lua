@@ -65,6 +65,9 @@ return {
 	-- Use snacks.nvim for some lsp mappings
 	{ import = "astrocommunity.recipes.picker-lsp-mappings" },
 
+	-- Code chunk highlighting
+	{ import = "astrocommunity.indent.snacks-indent-hlchunk" },
+
 	-- Automatic split window management
 	{ import = "astrocommunity.split-and-window.windows-nvim" },
 
