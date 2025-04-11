@@ -17,6 +17,9 @@ return {
 	-- Better lsp renaming functionality
 	{ import = "astrocommunity.lsp.inc-rename-nvim" },
 
+	-- Easy find and replace
+	{ import = "astrocommunity.search.grug-far-nvim" },
+
 	-- Change the looks of the default icons
 	{ import = "astrocommunity.recipes.vscode-icons" },
 
