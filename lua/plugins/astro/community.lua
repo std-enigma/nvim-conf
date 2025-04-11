@@ -14,6 +14,9 @@ return {
 	-- Better UI functionality
 	{ import = "astrocommunity.utility.noice-nvim" },
 
+	-- Better % navigation
+	{ import = "astrocommunity.motion.vim-matchup" },
+
 	-- Better lsp renaming functionality
 	{ import = "astrocommunity.lsp.inc-rename-nvim" },
 
