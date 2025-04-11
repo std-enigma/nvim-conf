@@ -1,6 +1,6 @@
 ---@type LazySpec
 return {
-	-- Better lsp signatures
+	-- Customize lsp_signatures
 	{
 		"ray-x/lsp_signature.nvim",
 		event = "BufRead",
