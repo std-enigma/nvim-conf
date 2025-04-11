@@ -11,6 +11,9 @@ return {
 	-- Configure nvim for vscode usage
 	{ import = "astrocommunity.recipes.vscode" },
 
+	-- Discord rich presence for neovim
+	{ import = "astrocommunity.media.cord-nvim" },
+
 	-- Configure nvim for neovide usage
 	{ import = "astrocommunity.recipes.neovide" },
 
