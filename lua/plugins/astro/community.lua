@@ -17,6 +17,9 @@ return {
 	-- Better % navigation
 	{ import = "astrocommunity.motion.vim-matchup" },
 
+	-- Better w/e/b navigation
+	{ import = "astrocommunity.motion.nvim-spider" },
+
 	-- Tab out from parentheses, quotes, and similar contexts
 	{ import = "astrocommunity.motion.tabout-nvim" },
 
