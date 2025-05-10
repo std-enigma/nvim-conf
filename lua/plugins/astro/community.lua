@@ -56,11 +56,17 @@ return {
 	-- Another cool file explorer
 	{ import = "astrocommunity.file-explorer.oil-nvim" },
 
+	-- The best colorscheme ever made
+	{ import = "astrocommunity.colorscheme.catppuccin" },
+
 	-- Better diagnostics + quickfix and location list
 	{ import = "astrocommunity.diagnostics.trouble-nvim" },
 
 	-- Cache and setup the last used colorscheme
 	{ import = "astrocommunity.recipes.cache-colorscheme" },
+
+	-- An awsome colorscheme
+	{ import = "astrocommunity.colorscheme.tokyonight-nvim" },
 
 	-- Change the looks of the snacks.nvim picker
 	{ import = "astrocommunity.recipes.picker-nvchad-theme" },
