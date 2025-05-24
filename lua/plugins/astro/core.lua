@@ -25,6 +25,7 @@ return {
 				spell = false, -- sets vim.opt.spell
 				signcolumn = "yes", -- sets vim.opt.signcolumn to yes
 				wrap = false, -- sets vim.opt.wrap
+				guifont = { "JetBrainsMono Nerd Font" }, -- sets vim.opt.guifont
 			},
 		},
 		-- Mappings configuration
