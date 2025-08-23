@@ -1,5 +1,8 @@
 ---@type LazySpec
 return {
+	-- Customize Catppuccin colorscheme
+	{ "catppuccin", opts = { term_colors = true } },
+
 	-- Customize LuaSnip
 	{
 		"L3MON4D3/LuaSnip",
