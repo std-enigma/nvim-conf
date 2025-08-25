@@ -1,8 +1,8 @@
 ---@diagnostic disable: assign-type-mismatch
 local short_prefix = "<Leader>"
-local prefix = "<Leader><Leader>"
+local prefix = "<Leader>h"
 
---e@type LazySpec
+---@type LazySpec
 return {
 	"smoka7/hop.nvim",
 	config = true,
@@ -51,7 +51,7 @@ return {
 					},
 				},
 				n = {
-					[prefix] = { desc = "Hop " },
+					[prefix] = { desc = " Hop" },
 					[prefix .. "w"] = {
 						function()
 							require("hop").hint_words({ multi_windows = true, direction = nil })
@@ -122,9 +122,15 @@ return {
 						end,
 						desc = "Hint patterns",
 					},
+					[short_prefix .. "<Space>"] = {
+						function()
+							require("hop").hint_camel_case({ multi_windows = true, direction = nil })
+						end,
+						desc = "󱕘 Quick Hop",
+					},
 				},
 				x = {
-					[prefix] = { desc = "Hop " },
+					[prefix] = { desc = " Hop" },
 					[prefix .. "w"] = {
 						function()
 							require("hop").hint_words({ direction = nil })
@@ -175,9 +181,16 @@ return {
 						end,
 						desc = "Hint patterns",
 					},
+					[short_prefix .. "<Space>"] = {
+						function()
+							local positions = require("hop.hint").HintPosition
+							require("hop").hint_camel_case({ hint_position = positions.END, direction = nil })
+						end,
+						desc = "󱕘 Quick Hop",
+					},
 				},
 				o = {
-					[short_prefix] = { desc = "Hop " },
+					[short_prefix] = { desc = " Hop" },
 					[short_prefix .. "w"] = {
 						function()
 							require("hop").hint_words({ direction = nil })
@@ -227,6 +240,13 @@ return {
 							require("hop").hint_patterns({ direction = nil })
 						end,
 						desc = "Hint patterns",
+					},
+					[short_prefix .. "<Space>"] = {
+						function()
+							local positions = require("hop.hint").HintPosition
+							require("hop").hint_camel_case({ hint_position = positions.END, direction = nil })
+						end,
+						desc = "󱕘 Quick Hop",
 					},
 				},
 			},
