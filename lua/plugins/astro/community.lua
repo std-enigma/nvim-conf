@@ -11,9 +11,6 @@ return {
 	-- Configure nvim for vscode usage
 	{ import = "astrocommunity.recipes.vscode" },
 
-	-- Hop around the file like a maniac
-	{ import = "astrocommunity.motion.hop-nvim" },
-
 	-- Discord rich presence for neovim
 	{ import = "astrocommunity.media.cord-nvim" },
 
