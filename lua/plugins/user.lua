@@ -44,4 +44,28 @@ return {
 			)
 		end,
 	},
+
+	-- Customize snacks.nvim
+	{
+		"folke/snacks.nvim",
+		specs = {
+			{
+				"AstroNvim/astrocore",
+				opts = function(_, opts)
+					local maps = opts.mappings
+					-- Snacks.dashboard mappins
+					maps.n["<Leader>H"] = {
+						function()
+							if vim.bo.filetype == "snacks_dashboard" then
+								require("astrocore.buffer").close()
+							else
+								require("snacks").dashboard()
+							end
+						end,
+						desc = "Home Screen",
+					}
+				end,
+			},
+		},
+	},
 }
