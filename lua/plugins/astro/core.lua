@@ -44,6 +44,8 @@ return {
 					end,
 					desc = "Previous buffer",
 				},
+				-- disable the default home screen mapping
+				["<Leader>h"] = false,
 			},
 		},
 		-- AutoCmds configuration
