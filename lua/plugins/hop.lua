@@ -5,51 +5,12 @@ local prefix = "<Leader>h"
 ---@type LazySpec
 return {
 	"smoka7/hop.nvim",
+	event = "VeryLazy",
 	config = true,
 	dependencies = {
 		"AstroNvim/astrocore",
 		opts = {
 			mappings = {
-				[""] = {
-					f = {
-						function()
-							local directions = require("hop.hint").HintDirection
-							require("hop").hint_char1({
-								direction = directions.AFTER_CURSOR,
-								current_line_only = true,
-							})
-						end,
-					},
-					F = {
-						function()
-							local directions = require("hop.hint").HintDirection
-							require("hop").hint_char1({
-								direction = directions.BEFORE_CURSOR,
-								current_line_only = true,
-							})
-						end,
-					},
-					t = {
-						function()
-							local directions = require("hop.hint").HintDirection
-							require("hop").hint_char1({
-								direction = directions.AFTER_CURSOR,
-								current_line_only = true,
-								hint_offset = -1,
-							})
-						end,
-					},
-					T = {
-						function()
-							local directions = require("hop.hint").HintDirection
-							require("hop").hint_char1({
-								direction = directions.BEFORE_CURSOR,
-								current_line_only = true,
-								hint_offset = 1,
-							})
-						end,
-					},
-				},
 				n = {
 					[prefix] = { desc = " Hop" },
 					[prefix .. "w"] = {
