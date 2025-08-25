@@ -178,26 +178,26 @@ return {
 				},
 				o = {
 					[short_prefix] = { desc = "Hop " },
-					[prefix .. "w"] = {
+					[short_prefix .. "w"] = {
 						function()
 							require("hop").hint_words({ direction = nil })
 						end,
 						desc = "Hint words (start)",
 					},
-					[prefix .. "W"] = {
+					[short_prefix .. "W"] = {
 						function()
 							local positions = require("hop.hint").HintPosition
 							require("hop").hint_words({ hint_position = positions.END, direction = nil })
 						end,
 						desc = "Hint words (end)",
 					},
-					[prefix .. "c"] = {
+					[short_prefix .. "c"] = {
 						function()
 							require("hop").hint_camel_case({ direction = nil })
 						end,
 						desc = "Hint CamelCase (start)",
 					},
-					[prefix .. "C"] = {
+					[short_prefix .. "C"] = {
 						function()
 							local positions = require("hop.hint").HintPosition
 							require("hop").hint_camel_case({ hint_position = positions.END, direction = nil })
