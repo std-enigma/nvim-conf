@@ -75,7 +75,13 @@ return {
 						function()
 							require("hop-yank").paste_char1({ multi_windows = true, direction = nil })
 						end,
-						desc = "Paste",
+						desc = "Paste after",
+					},
+					[prefix .. "P"] = {
+						function()
+							require("hop-yank").paste_char1({ hint_offset = -1, multi_windows = true, direction = nil })
+						end,
+						desc = "Paste before",
 					},
 					[prefix .. "/"] = {
 						function()
